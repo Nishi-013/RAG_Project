@@ -15,11 +15,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.patches import FancyBboxPatch
+import os
+
 
 
 # ── 1. OUR RAG PIPELINE DIAGRAM ─────────────────────────────────────────────
 
-def plot_pipeline(save_path='rag_pipeline.png'):
+def plot_pipeline(save_path='../diagram/rag_pipeline.png'):
     """
     Generate and save the Always Retrieval pipeline diagram showing
     the five sequential steps of our implementation:
@@ -108,7 +110,7 @@ def plot_pipeline(save_path='rag_pipeline.png'):
 
 # ── 2. RESULTS BAR CHART ────────────────────────────────────────────────────
 
-def plot_results(results_df, save_path='results_chart.png'):
+def plot_results(results_df, save_path='../diagram/results_chart.png'):
     """
     Generate and save a side-by-side grouped bar chart comparing
     all three strategies on Overall results and Retrieval-Needed
@@ -189,7 +191,7 @@ def plot_results(results_df, save_path='results_chart.png'):
 
 # ── 3. ORIGINAL PAPER ARCHITECTURE DIAGRAM ──────────────────────────────────
 
-def plot_paper_architecture(save_path='original_paper_architecture.png'):
+def plot_paper_architecture(save_path='../diagram/original_paper_architecture.png'):
     """
     Generate and save the original RetrievalQA paper architecture diagram.
     Split into three clearly labelled panels for easy reading:
@@ -446,3 +448,4 @@ def plot_paper_architecture(save_path='original_paper_architecture.png'):
     plt.savefig(save_path, dpi=150, bbox_inches='tight', facecolor='white')
     plt.show()
     print("Original paper architecture saved as " + save_path)
+    

@@ -17,7 +17,7 @@ import time
 # ── API Configuration ─────────────────────────────────────────────────────────
 
 # Paste your OpenAI API key here
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "*************"
 
 # Model used throughout the project
 # gpt-3.5-turbo matches the paper's model family and costs ~$0.15 for 500 calls
